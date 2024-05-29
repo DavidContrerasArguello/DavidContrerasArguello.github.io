@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Contreras</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-5" href="#">DCA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active mx-2" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#sobreMi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#contacto">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#formacion">Formación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="#contacto">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="https://github.com/DavidContrerasArguello" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+            </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2" href="https://www.linkedin.com/in/davidcontrerasarguello/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+            </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main>
+    <article id="presentacion" class="container-fluid">
+      <div class="row text-center p-5 d-flex justify-content-center">
+        <h3 class="col-12 m-3">Bienvenido a mi Portfolio! 👋</h3>
+        <h1 class="col-12 m-3 display-3">David Contreras Argüello</h1>
+        <h4 class="col-12 m-3">Estudiante de Desarrollo de Aplicaciones Web</h4>
+        <a id="cv" href="archivos/CV David Contreras Arguello.pdf" download="CV - David Contreras Arguello.pdf" class="p-2 col-12 col-md-6 col-lg-4 mt-5">Descargar CV</a>
+      </div>
+    </article>
+  </main>
+
+  <!-- SOBRE MI -->
+  <article id="sobreMi" class="container-fluid">
+    <section id="encabezado" class="text-center w-100"><h1>SOBRE MÍ</h1></section>
+    <section class="text-start mt-5">
+      <div class="text-center">
+        <h3>Me defino como...</h3>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+          <img src="img/miFoto.png" alt="foto mía, el creador de este portfolio" class="img-fluid rounded-circle w-50">
+        </div>
+        <div class="col-12 col-md-8">
+          <p class="p-3">
+            Familiar, tranquilo y una persona "normal". <br><br>
+            Apasionado de la informática que busca aprender de los demás y aportar lo máximo. <br><br>
+            Mi objetivo en el sector es llevar la experiencia de los usuarios a otro nivel, haciendo de las aplicaciones web un mundo verdaderamente accesible para todos.<br><br>
+          </p>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <!-- PROYECTOS -->
+  <article id="proyectos" class="container-fluid">
+    <section id="encabezado" class="text-center w-100"><h1>PROYECTOS</h1></section>
+    <section id="gallery" class="mt-5">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="img/bgproyectoUno.png" class="card-img-top p-3" alt="">
+            <div class="card-body">
+              <h5 class="card-title">App Tractores</h5>
+              <p class="card-text">Aplicación hecha con la librería Java Swing que ofrece diferentes servicios dirigidos a personas que posean un tractor.</p>
+              <div class="mb-2">
+                <span class="badge bg-danger">Java</span>
+                <span class="badge bg-info">Java Swing</span>
+                <span class="badge bg-dark">Github</span>
+              </div>
+              <a href="https://github.com/DavidContrerasArguello/TractorApp" class="btn btn-primary" target="_blank">Visitar proyecto</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="img/bgproyectoDos.png" class="card-img-top p-3" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Web Turismo</h5>
+              <p class="card-text">Página de turismo de una ciudad ficticia</p>
+              <div class="mb-2">
+                <span class="badge bg-danger">HTML</span>
+                <span class="badge bg-info">CSS</span>
+                <span class="badge bg-warning">JavaScript</span>
+                <span class="badge bg-dark">Github</span>
+              </div>
+              <a href="https://github.com/DavidContrerasArguello/ViceTravels" class="btn btn-primary" target="_blank">Visitar proyecto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+      <!-- EXPERIENCIA -->
+      <article id="experiencia" class="container-fluid">
+        <section id="encabezado" class="text-center w-100"><h1>EXPERIENCIA</h1></section>
+        <div class="container m-5">
+          <div class="row mb-5">
+            <div class="col-2">Marzo - Junio 2023</div>
+            <div class="col-10">
+              <h3>Técnico Informático</h3>
+              <h4 class="text-muted">PIMASA</h4>
+              <ol style="list-style-type: disc;">
+                <li>Administración de Redes Locales</li>
+                <li>Gestión de Programas Ofimáticos</li>
+                <li>Reparación y Mantenimiento de equipos</li>
+              </ol>
+            </div>
+          </div>
+      </article>
+
+    <!-- FORMACION -->
+    <article id="formacion" class="container-fluid">
+      <section id="encabezado" class="text-center w-100"><h1>FORMACION</h1></section>
+      <div class="container m-5">
+        <div class="row mb-5">
+          <div class="col-2">2023 - </div>
+          <div class="col-10">
+            <h3>Grado Superior Desarrollo de Aplicaciones Web</h3>
+            <h4 class="text-muted">ILERNA Sevilla</h4>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-2">2021 - 2023</div>
+          <div class="col-10">
+            <h3>Grado Medio Sistemas Microinformáticos y Redes</h3>
+            <h4 class="text-muted">CESUR Sevilla</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">2017 - 2021</div>
+          <div class="col-10 ">
+            <h3>Educación Secundaria Obligatoria</h3>
+            <h4 class="text-muted">I.E.S Margarita Salas</h4>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <article id="contacto" class="container-fluid mt-5">
+    <section id="encabezado" class="text-center w-100"><h1>CONTACTO</h1></section>
+    <h2 class="mt-5 mx-5 px-5">Formulario de Contacto</h2>
+    <form id="contactForm" class="px-5 mx-5">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+            <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+        </div>
+        <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+            <div class="invalid-feedback">Por favor, ingrese sus apellidos.</div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Género</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="genero" id="generoMasculino" value="Masculino" required>
+                <label class="form-check-label" for="generoMasculino">Masculino</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="genero" id="generoFemenino" value="Femenino">
+                <label class="form-check-label" for="generoFemenino">Femenino</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="genero" id="generoOtro" value="Otro">
+                <label class="form-check-label" for="generoOtro">Otro</label>
+            </div>
+            <div class="invalid-feedback d-block">Por favor, seleccione su género.</div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <div class="invalid-feedback">Por favor, ingrese un correo electrónico válido.</div>
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            <div class="invalid-feedback">Por favor, ingrese su mensaje.</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </article>
+
+  <!-- FOOTER -->
+  <footer class="container-fluid">
+    <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2024 David Contreras Argüello</p>
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <ul class="nav col-md-4 justify-content-end">
+        <div class="container">
+          <div class="row">
+            <li class="nav-item">
+              <a class="nav-link active mx-2" aria-current="page" href="#">Home</a>
+            </li>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#sobreMi">Sobre mí</a>
+            </li>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#proyectos">Proyectos</a>
+            </li>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#contacto">Experiencia</a>
+            </li>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#formacion">Formación</a>
+            </li>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="#contacto">Contacto</a>
+            </li>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://github.com/DavidContrerasArguello" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                  <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
+              </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="https://www.linkedin.com/in/davidcontrerasarguello/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                  <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+              </svg>
+              </a>
+            </li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+            var form = document.getElementById('contactForm');
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    alert('Formulario enviado con éxito.');
+                }
+                form.classList.add('was-validated');
+            }, false);
+        }, false);
+    })();
+  </script>
+
+
+</body>
+</html>

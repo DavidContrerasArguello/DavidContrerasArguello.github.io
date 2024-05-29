@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root {
+    --color-bg: #393E46;
+    --color-element: #6D9886;
+    --color-element-secondary: #445e53;
+    --color-heading: #F2E7D5;
+    --color-text: #F7F7F7;
+    --color-text-secondary: #4c4c4c;
+    --color-highlight: #858AE3;
+    --color-highlight-secondary: #c5c5c5;
+    --color-highlight2: #c785e3;
+    --color-highlight2-secondary: #76d6e7;
+    --font-base: "Fira Code", monospace;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-base);
+    justify-content: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-heading);
+    font-weight: 500;
+}
+
+p {
+    color: var(--color-text);
+    font-weight: 100;
+    font-size: larger;
+}
+
+div[class="card-body"] p {
+    color: var(--color-text-secondary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-highlight);
+    transition:  all 0.4s ease;
+}
+
+a:hover {
+    color: var(--color-highlight2);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--color-highlight-secondary);
+    transition:  all 0.4s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-highlight2-secondary);
+}
+
+nav {
+    background-color: var(--color-element);
+}
+
+svg {
+    width: 32px;
+    height: 32px;
+    margin-top: 5px;
+}
+
+#encabezado {
+    background-color: var(--color-element);
+    padding: 10px;
+}
+
+main {
+    height: 820px;
+}
+
+#cv {
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-heading);
+    border-radius: 5px;
+}
+
+.card {
+    background-color: var(--color-heading);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-element);
+}
